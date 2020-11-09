@@ -1,0 +1,21 @@
+
+docker run -d --name cassandra-node -p 9042:9042 cassandra
+
+docker start cassandra-node
+
+docker exec -it cassandra-node bash
+
+cqlsh
+--------------------------------------------------------------------------------------------------------
+
+CREATE KEYSPACE music_auth_ks WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
+
+USE music_auth_ks;
+
+
+INSERT INTO google_auth_credentials(useremailid, user_name, user_role) VALUES('flinstones.user1@gmail.com', 'Fred Flinstones', 'BASIC_USER'); 
+
+INSERT INTO google_auth_credentials(useremailid, user_name, user_role) VALUES('flinstones.user2@gmail.com', 'Wilma Flinstones', 'SUBSCRIPTION_USER');
+
+-------------------------------------------------------------------------------------------------------------
+password: flinstonesmusicapp
