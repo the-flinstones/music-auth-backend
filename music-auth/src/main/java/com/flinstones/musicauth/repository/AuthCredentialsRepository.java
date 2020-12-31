@@ -1,4 +1,4 @@
 package com.flinstones.musicauth.repository;
 
-public class AuthCredentialsRepository {
+public interface AuthCredentialsRepository {
 }

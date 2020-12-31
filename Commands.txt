@@ -15,7 +15,11 @@ USE music_auth_ks;
 
 INSERT INTO google_auth_credentials(useremailid, user_name, user_role) VALUES('flinstones.user1@gmail.com', 'Fred Flinstones', 'BASIC_USER'); 
 
-INSERT INTO google_auth_credentials(useremailid, user_name, user_role) VALUES('flinstones.user2@gmail.com', 'Wilma Flinstones', 'SUBSCRIPTION_USER');
+INSERT INTO google_auth_credentials(useremailid, user_name, user_role) VALUES('flinstones.user2@gmail.com', 'Wilma Flinstones', 'PREMIUM_USER');
+
+INSERT INTO google_auth_credentials(useremailid, user_name, user_role) VALUES('ellen@gmail.com', 'Ellen Edwards', 'BASIC_USER'); 
+
+INSERT INTO google_auth_credentials(useremailid, user_name, user_role) VALUES('john@gmail.com', 'John Stone', 'PREMIUM_USER');
 
 -------------------------------------------------------------------------------------------------------------
 password: flinstonesmusicapp
