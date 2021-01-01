@@ -46,11 +46,13 @@ public class GoogleAuthService {
                     Response response = new Response();
                     response.setName(name);
                     response.setRole(BASIC_USER);
+                    response.setEmail(email);
                     return new ResponseEntity<>(response, HttpStatus.OK);
                 } else if (role.get().getUserRole().equalsIgnoreCase(SUBSCRIPTION_USER)) {
                     Response response = new Response();
                     response.setName(name);
                     response.setRole(SUBSCRIPTION_USER);
+                    response.setEmail(email);
                     return new ResponseEntity<>(response, HttpStatus.OK);
                 }
             }
