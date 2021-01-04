@@ -7,6 +7,8 @@ import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 import javax.validation.constraints.NotNull;
+import java.util.Date;
+import java.util.UUID;
 
 @Data
 @Table("google_auth_credentials")
@@ -24,4 +26,5 @@ public class GoogleAuthCredentials {
     @NotNull
     @Column("user_role")
     private String userRole;
+
 }
