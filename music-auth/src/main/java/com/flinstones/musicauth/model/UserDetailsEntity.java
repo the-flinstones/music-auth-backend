@@ -22,4 +22,5 @@ public class UserDetailsEntity {
     private Date dob;
     private String country;
     private String type;
+    private String password;
 }
